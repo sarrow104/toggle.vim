@@ -19,6 +19,7 @@ endfunction
 
 function! toggle#NumberPreced()
     setlocal nu!
+    let &rnu = &nu
     echo "number-preced ". (&nu? 'on': 'off')
 endfunction
 
